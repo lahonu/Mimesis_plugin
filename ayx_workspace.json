@@ -1,0 +1,48 @@
+{
+    "name": "Mimesis Data Generator",
+    "tool_category": "In/Out",
+    "package_icon_path": "configuration\\default_package_icon.png",
+    "author": "Sophia Fraticelli",
+    "company": "Alteryx, Inc.",
+    "copyright": "2022",
+    "description": "Generate random data using the python package Mimesis.",
+    "ayx_cli_version": "1.0.3",
+    "backend_language": "python",
+    "backend_language_settings": {
+        "python_version": "3.8",
+        "requirements_local_path": "tool_backends\\requirements-local.txt",
+        "requirements_thirdparty_path": "tool_backends\\requirements-thirdparty.txt"
+    },
+    "tools": {
+        "MimesisDataGenerator": {
+            "backend": {
+                "tool_module": "ayx_plugins",
+                "tool_class_name": "MimesisDataGenerator"
+            },
+            "ui": {},
+            "configuration": {
+                "long_name": "Mimesis Data Generator",
+                "description": "Generate random data using the python package Mimesis.",
+                "version": "3.0",
+                "search_tags": [],
+                "help_url": "https://help.alteryx.com/developer-help",
+                "icon_path": "configuration\\MimesisDataGenerator\\icon.png",
+                "input_anchors": {
+                    "Input": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": true
+                    }
+                },
+                "output_anchors": {
+                    "Output": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": false
+                    }
+                }
+            }
+        }
+    },
+    "tool_version": "1.0"
+}
